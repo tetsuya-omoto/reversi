@@ -230,17 +230,6 @@ public class StageManager : MonoBehaviour
             timerText.text = "終了";
         }
     }
-    // private int[,] squares = new int[squareZ, squareX];
-    // private int aiPoint;
-    // public void AISquarePoint(){
-    //     squares[0,0] = 100;squares[7,0] = 100;squares[0,7] = 100;squares[7,7] = 100;
-    //     squares[1,0] = -50;squares[0,1] = -50;squares[6,0] = -50;squares[7,1] = -50;squares[0,6] = -50;squares[6,7] = -50;squares[7,6] = -50;
-    //     squares[1,1] = -100;squares[6,1] = -100;squares[1,6] = -100;squares[6,6] = -100;
-    //     squares[0,2] = 30;squares[0,3] = 30;squares[0,4] = 30;squares[0,5] = 30;squares[2,0] = 30;squares[3,0] = 30;squares[4,0] = 30;squares[5,0] = 30;
-    //     squares[7,2] = 30;squares[7,3] = 30;squares[7,4] = 30;squares[7,5] = 30;squares[2,7] = 30;squares[3,7] = 30;squares[4,7] = 30;squares[5,7] = 30;
-    //     squares[3,3] = -200;squares[4,3] = -200;squares[3,4] = -200;squares[4,4] = -200;
-
-    // }
 
     public void AIPutStone(){
         //x,zの値を取得
@@ -265,7 +254,6 @@ public class StageManager : MonoBehaviour
             Turn(true);
             
             turn = ((turn == eStoneState.BLACK) ? eStoneState.WHITE : eStoneState.BLACK);
-            // aiPoint += squares[z,x];
 
             isAI = false;
         }
